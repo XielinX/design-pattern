@@ -1,4 +1,4 @@
-package com.xlx.dp.strategy.factory;
+package com.xlx.dp.strategypattern.factory;
 
 /**
  * 收银抽象类

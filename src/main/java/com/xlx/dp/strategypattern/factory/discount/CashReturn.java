@@ -1,10 +1,12 @@
-package com.xlx.dp.strategy.factory;
+package com.xlx.dp.strategypattern.factory.discount;
+
+import com.xlx.dp.strategypattern.factory.AbstractCash;
 
 /**
  * 满几返利
  * @author xielx at 2019/10/24 14:11
  */
-public class CashReturn extends AbstractCash{
+public class CashReturn extends AbstractCash {
     
     /**
      * 消费金额

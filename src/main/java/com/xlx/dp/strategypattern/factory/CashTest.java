@@ -1,4 +1,4 @@
-package com.xlx.dp.strategy.factory;
+package com.xlx.dp.strategypattern.factory;
 
 /**
  * 测试
@@ -10,7 +10,7 @@ public class CashTest {
     
     public static void main(String[] args) {
     
-        AbstractCash abstractCash = CachFacotory.getTotalMoney("打8折");
+        AbstractCash abstractCash = CashFactory.getTotalMoney("打8折");
         double money = abstractCash.getMoney(100);
         System.out.println("打八折:" + money);
     }
