@@ -1,2 +1,2 @@
-# design-pattern
-设计模式
+# Design-Pattern
+大话设计模式
