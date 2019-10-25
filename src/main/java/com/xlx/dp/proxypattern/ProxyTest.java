@@ -1,5 +1,9 @@
 package com.xlx.dp.proxypattern;
 
+import com.xlx.dp.proxypattern.entity.Proxyer;
+import com.xlx.dp.proxypattern.entity.Pursuiter;
+import com.xlx.dp.proxypattern.entity.SchoolGirl;
+
 /**
  * 代理测试
  *

@@ -1,4 +1,4 @@
-package com.xlx.dp.proxypattern;
+package com.xlx.dp.proxypattern.entity;
 
 /**
  * 学校美眉

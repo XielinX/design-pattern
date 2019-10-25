@@ -1,6 +1,6 @@
-package com.xlx.dp.factorypattern.calculate;
+package com.xlx.dp.simplefactorypattern.calculate;
 
-import com.xlx.dp.factorypattern.AbstractOperation;
+import com.xlx.dp.simplefactorypattern.AbstractOperation;
 
 import java.math.BigDecimal;
 

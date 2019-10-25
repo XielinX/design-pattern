@@ -1,9 +1,9 @@
-package com.xlx.dp.factorypattern;
+package com.xlx.dp.simplefactorypattern;
 
-import com.xlx.dp.factorypattern.calculate.OperationAdd;
-import com.xlx.dp.factorypattern.calculate.OperationDiv;
-import com.xlx.dp.factorypattern.calculate.OperationMul;
-import com.xlx.dp.factorypattern.calculate.OperationSub;
+import com.xlx.dp.simplefactorypattern.calculate.OperationAdd;
+import com.xlx.dp.simplefactorypattern.calculate.OperationDiv;
+import com.xlx.dp.simplefactorypattern.calculate.OperationMul;
+import com.xlx.dp.simplefactorypattern.calculate.OperationSub;
 
 /**
  * operation工厂类

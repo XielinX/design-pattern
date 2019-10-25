@@ -1,6 +1,6 @@
-package com.xlx.dp.strategypattern.factory.discount;
+package com.xlx.dp.strategypattern.simplefactory.discount;
 
-import com.xlx.dp.strategypattern.factory.AbstractCash;
+import com.xlx.dp.strategypattern.simplefactory.AbstractCash;
 
 /**
  * 正常收费

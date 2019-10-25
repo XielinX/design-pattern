@@ -1,8 +1,8 @@
-package com.xlx.dp.strategypattern.factory;
+package com.xlx.dp.strategypattern.simplefactory;
 
-import com.xlx.dp.strategypattern.factory.discount.CashReturn;
-import com.xlx.dp.strategypattern.factory.discount.DiscountCach;
-import com.xlx.dp.strategypattern.factory.discount.NormalCash;
+import com.xlx.dp.strategypattern.simplefactory.discount.CashReturn;
+import com.xlx.dp.strategypattern.simplefactory.discount.DiscountCach;
+import com.xlx.dp.strategypattern.simplefactory.discount.NormalCash;
 
 /**
  * 收银工厂

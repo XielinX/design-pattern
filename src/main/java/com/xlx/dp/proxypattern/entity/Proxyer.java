@@ -1,11 +1,13 @@
-package com.xlx.dp.proxypattern;
+package com.xlx.dp.proxypattern.entity;
+
+import com.xlx.dp.proxypattern.IGiveGift;
 
 /**
  * 代理者 :中介
  *
  * @author xielx at 2019/10/25 15:37
  */
-public class Proxyer implements IGiveGift{
+public class Proxyer implements IGiveGift {
     
     /**
      * 代理者名称

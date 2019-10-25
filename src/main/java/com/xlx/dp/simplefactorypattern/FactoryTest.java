@@ -1,4 +1,4 @@
-package com.xlx.dp.factorypattern;
+package com.xlx.dp.simplefactorypattern;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,9 @@
 package com.xlx.dp.strategypattern.strategy;
 
 
+import com.xlx.dp.strategypattern.strategy.discount.CashReturn;
+import com.xlx.dp.strategypattern.strategy.discount.DiscountCash;
+import com.xlx.dp.strategypattern.strategy.discount.NormalCash;
 
 /**
  * 策略维护类

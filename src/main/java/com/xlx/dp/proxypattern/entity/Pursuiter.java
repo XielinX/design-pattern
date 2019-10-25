@@ -1,11 +1,13 @@
-package com.xlx.dp.proxypattern;
+package com.xlx.dp.proxypattern.entity;
+
+import com.xlx.dp.proxypattern.IGiveGift;
 
 /**
  * 追求者 , 小白
  *   小白想追求小红,但是害羞,想委托给好友小王表达
  * @author xielx at 2019/10/25 15,20
  */
-public class Pursuiter implements IGiveGift{
+public class Pursuiter implements IGiveGift {
     
     /**
      * 姓名

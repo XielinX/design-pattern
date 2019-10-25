@@ -1,4 +1,6 @@
-package com.xlx.dp.strategypattern.strategy;
+package com.xlx.dp.strategypattern.strategy.discount;
+
+import com.xlx.dp.strategypattern.strategy.AbstractStrategy;
 
 /**
  * 返利
