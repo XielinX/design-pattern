@@ -75,3 +75,41 @@
   + 志愿者以雷锋为榜样,到社区热心服务
  + 要区分**简单工厂**模式
 ### 应用场景
+
+## 原型模式
+### 定义
++ 用原型实例指定创建对象的种类,并且通过拷贝这些原型创建新的对象
++ 理解:
+  + 简历有名称name,设置年龄age,性别gender,设置工作经历(这是一个类)
+  + 现在需要打印三份不同经历的简历
+### 使用了克隆知识
++ 必须实现Cloneable接口
++ 可以重写clone()方法
+
+####浅拷贝
++ 会拷贝基本类型的值,一样
++ 引用类型的引用地址也一样
+####深拷贝
++ 会拷贝基本类型的值,一样
++ 引用类型的引用地址不一样
+
+```java
+public class Test{
+    public static void main(String[] args){
+      Resume resume = new Resume();
+      Resume clone = resume.clone();
+      // 基本类型true
+      resume.age == clone.age;
+      // 浅克隆引用类型true
+      resume.experise == clone.experise;
+      
+      // 深克隆引用类型false
+      resume.experise == clone.experise;
+    }
+}
+```
+### 应用场景
+
+## 模板模型
+### 定义
++ 

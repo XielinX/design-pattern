@@ -7,15 +7,15 @@ package com.xlx.dp.factorymethodpattern.entity;
  */
 public class LeiFen {
     
-    protected void swap(){
+    public void swap(){
         System.out.println("扫地");
     }
     
-    protected void doCleaning(){
+    public void doCleaning(){
         System.out.println("洗东西");
     }
     
-    protected void bySomeRice(){
+    public void bySomeRice(){
         System.out.println("买米");
     }
     
