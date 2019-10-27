@@ -140,6 +140,29 @@ public class Test{
   
 + 理解2:
   + dao层进行数据库访问后,会有结果返回(受影响行数或结果集)
-  + 有一个统一结果返回规范,用户执行某个操作,不需要知道执行数据库的操作结果,
+  + 有一个统一结果返回规范Result类,用户执行某个操作,不需要知道执行数据库的操作结果,
   + 用户通过这个统一结果返回规范知道操作的成功与否
   
+  
+## 建造者模式
+### 定义
++ 将一个复杂对象的构建与它的表示分离,使得同样的构建过程可以创建不同的表示
++ 理解:
+  + 玩具生产,它由不同零件组装成
+  + 先定义一个玩具类型 class Product
+    + 零件属性 
+    + 添加零件方法 addPart()
+    + 玩具展示方法 show()
+  + 抽象生产方式(提取共同生产方式) abstract class Builder
+    + 各个零件组装方法 abstract buildPartA()
+    + 成品组装方法 abstract createProd()
+  + 具体某种玩具的生产(抽象生产方式的实现) class DuckBuilder
+    + 生产小黄鸭玩具 yellowDuck
+    + 生产惨叫鸡玩具 scrimChicken 
+  + 统一指导建造过程(用户不用知道如何建造,只需与建造者沟通即可) class Director
+    + 产品全部组装方法 construct(Builder builder)
+    
+  + 客户只需要调用构建者
+  
+     
+      
