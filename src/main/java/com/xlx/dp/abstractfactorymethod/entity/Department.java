@@ -7,6 +7,8 @@ package com.xlx.dp.abstractfactorymethod.entity;
  */
 public class Department {
     
+    
+    private Long deptId;
     /**
      * 部门名称
      */
@@ -16,6 +18,13 @@ public class Department {
      */
     private String deptAddress;
     
+    public Long getDeptId() {
+        return deptId;
+    }
+    
+    public void setDeptId(Long deptId) {
+        this.deptId = deptId;
+    }
     
     public String getDeptName() {
         return deptName;

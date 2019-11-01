@@ -206,7 +206,7 @@ public class DataAccess{
     private static final String DB = "SQLServer";
     public static IUser createUser(){
         IUser user = null;
-        switch (db){
+        switch (DB){
             case "SQLServer":
                 user = new SQLServerUser();
                 break;

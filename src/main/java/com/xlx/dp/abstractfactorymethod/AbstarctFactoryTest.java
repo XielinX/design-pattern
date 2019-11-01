@@ -1,6 +1,8 @@
 package com.xlx.dp.abstractfactorymethod;
 
+import com.xlx.dp.abstractfactorymethod.IFactoryImpl.AccessFactory;
 import com.xlx.dp.abstractfactorymethod.IUserImpl.AccessUser;
+import com.xlx.dp.abstractfactorymethod.entity.Department;
 import com.xlx.dp.abstractfactorymethod.entity.User;
 
 /**
@@ -20,6 +22,44 @@ public class AbstarctFactoryTest {
         accessDB.insertUser(user);
         
         // 部门
-        
+        Department dept = new Department();
+        //AccessDepartment accessDB = new AccessDepartment();
+        //accessDB.insertDepartment(dept);
     }
+    
+    
+    /**
+     * 抽象化工厂
+     */
+    public void testAbstractFactory(){
+        User user = new User();
+        IUser accessFactory = new AccessFactory().createUser();
+        accessFactory.insertUser(user);
+    }
+    
+    
+    /**
+     * 简单工厂模式简化new xxxFactory()
+     */
+    public void testAbstractFactoryWithFactory(){
+        User user = new User();
+        IUser accessUser = DataAccess.createUser();
+        accessUser.insertUser(user);
+    }
+    
+    /**
+     * 使用反射
+     */
+    public void testAbstractFactoryWithFactory2(){
+        User user = new User();
+        IUser accessUser = null;
+        try {
+            accessUser = DataAccess.createUserByReflection();
+            accessUser.insertUser(user);
+        } catch (ClassNotFoundException  | IllegalAccessException | InstantiationException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    
 }
