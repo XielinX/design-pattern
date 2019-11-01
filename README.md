@@ -184,4 +184,57 @@ public class Test{
 ### 运用场景
 + 当一个对象的改变需要同时改变其他对象时
 + 这其实就是解耦,使双方都依赖于抽象,而不是具体
+
+## 抽象工厂模式
+### 定义
++ **提供一个创建一系列相关或相互依赖的的对象的接口(创建对象的接口)**
++ 理解:
+  + 1实体类User,数据库操作类AccessUser(insert(User u);delete user(id);方法)
+  + 简单应用场景:实例化db操作类对象,然后调用相应方法
+  + 2假如更换数据库为SQLServer,需要增加数据库操作类SQLServerUser(同样的方法)
+  + 3发现db操作类方法类似,可以抽象出来做接口,IUser(insert();delete();)
+  + 4这样就必须要创建对应的接口实现类,AccessUserImpl类,SQLServerUserImpl类,应用场景依然实例化它们调用方法
+  + 5IUser的实现类都要先实例化,又抽象出来一个实例化操作的接口IFactory( IUser createUser();) `抽象工厂模式`
+  + 实现场景只需实例化对应创建的具体工厂实例,AccessFactory类/SQLServerFactory类
+  + 优化:
+    + 也是需要new xxxFactory();可以使用简单工厂模式实例类对象
+    + DataAccess类
+    + 进一步优化,使用反射取代`switch`
+```java
+public class DataAccess{
+    
+    private static final String DB = "SQLServer";
+    public static IUser createUser(){
+        IUser user = null;
+        switch (db){
+            case "SQLServer":
+                user = new SQLServerUser();
+                break;
+            case "Access":
+                user = new AccessUser();
+                break;
+            default:
+                user = null;    
+        }
+        return user;
+    }
+    
+    // 新增部门Department
+    public static IDepartment createDepartment(){
+            IDepartment department = null;
+            switch (db){
+                case "SQLServer":
+                    department = new SQLServerDepartment();
+                    break;
+                case "Access":
+                    department = new AccessDepartment();
+                    break;
+                default:
+                    department = null;    
+            }
+            return department;
+        }
+}
+```    
+### 运用场景
       
