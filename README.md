@@ -253,21 +253,102 @@ public class State{
     
     private String status;
     public static void main(String[] args){
-        
-    if(Objects.equals("online",status)){
-      // todo
-    }else if(Objects.equals("offline",status)){
-        // todo
-    }else if(Objects.equals("hidden",status)){
-        // todo
-    }else if(Objects.equals("logout",status)){
-        // todo
-    }else{ 
-        // todo 
-    }
+        // Long Method长方法(重构)
+        if(Objects.equals("online",status)){
+          // todo
+        }else if(Objects.equals("offline",status)){
+            // todo
+        }else if(Objects.equals("hidden",status)){
+            // todo
+        }else if(Objects.equals("logout",status)){
+            // todo
+        }else{ 
+            // todo 
+        }
   }
 }
 ```
 ### 应用场景
 + 当控制对象状态转变条件过于复杂时,把状态的判断逻辑转移到不同状态的类里面,以便将复杂的逻辑简化
-+ 一般会使用枚举类型存储不同类型  
++ 一般会使用枚举类型存储不同类型
+
+## 适配器模式
+### 定义
+### 应用场景
+
+
+## 适配器模式
+### 定义
+### 应用场景
+
+
+
+## 备忘录模式
+### 定义
+### 应用场景
+
+
+
+## 组合模式
+### 定义
+### 应用场景
+
+## 迭代器模式
+### 定义
+### 应用场景
+
+
+
+
+## 单例模式
+### 定义
+### 应用场景
+
+
+
+## 桥接模式
+### 定义
+### 应用场景
+
+
+
+## 命令模式
+### 定义
+### 应用场景
+
+
+
+## 职责链模式
+### 定义
+### 应用场景
+
+
+
+## 中介者模式
+### 定义
+### 应用场景
+
+
+
+## 享元模式
+### 定义
+### 应用场景
+
+
+
+## 解释器模式
+### 定义
+### 应用场景
+
+
+
+## 访问者模式
+### 定义
+### 应用场景
+
+
+
+
+
+
+
