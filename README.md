@@ -237,4 +237,37 @@ public class DataAccess{
 }
 ```    
 ### 运用场景
-      
+
+
+## 状态模式
+### 定义    
++ 当一个类对象状态改变时会影响其行为,看作是类对象改变其类
++ 理解:
+  + QQ的状态,
+    + 上线
+    + 下线
+    + 隐身
+    + 注销
+```java
+public class State{
+    
+    private String status;
+    public static void main(String[] args){
+        
+    if(Objects.equals("online",status)){
+      // todo
+    }else if(Objects.equals("offline",status)){
+        // todo
+    }else if(Objects.equals("hidden",status)){
+        // todo
+    }else if(Objects.equals("logout",status)){
+        // todo
+    }else{ 
+        // todo 
+    }
+  }
+}
+```
+### 应用场景
++ 当控制对象状态转变条件过于复杂时,把状态的判断逻辑转移到不同状态的类里面,以便将复杂的逻辑简化
++ 一般会使用枚举类型存储不同类型  
